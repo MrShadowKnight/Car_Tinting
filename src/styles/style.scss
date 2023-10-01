@@ -1,0 +1,15 @@
+// import libraries
+
+// import base styles
+@import "base/func";
+@import "base/mixins";
+@import "base/variables";
+
+// import static components
+@import "components/header";
+@import "components/footer";
+
+// import dynamic components
+
+// import pages
+@import "pages/page-about";
