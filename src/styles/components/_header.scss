@@ -1,4 +1,56 @@
 .header {
-    background-color: $primary-color;
+    background-color: #000000;
     color: #fff;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 24px 0;
+    & a{
+        & img{
+            width: 208px;
+            height: 26px;
+        }
+    }
+    &__nav {
+        &_contact {
+            border-radius: 5px;
+            background-color: #F2C938;
+            color: #fff;
+            padding: 12px 34px;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+            &:hover {
+                background-color: #f2ca38b9;
+                color: #ffffff !important;
+            }
+        }
+        & ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            & li {
+                margin-right: 20px;
+                & a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                    color: #F2C938;
+                    transition: all 0.3s ease-in-out;
+                    }
+                }
+                & img{
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+    }
 }
