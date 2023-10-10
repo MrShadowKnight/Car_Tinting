@@ -1,5 +1,4 @@
 // import libraries
-
 @import "base/reset";
 
 // import base styles
@@ -12,11 +11,12 @@
 @import "components/footer";
 
 // import dynamic components
+@import "components/hero";
 
 // import pages
 @import "pages/page-about";
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: Ubuntu;
     background-color: #28282A;
 }
