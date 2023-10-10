@@ -1,3 +1,12 @@
+$(".hero__slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM loaded");
 });
