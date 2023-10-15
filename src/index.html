@@ -7,13 +7,15 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="/node_modules/slick/slick.css"
+      href="../node_modules/slick-carousel/slick/slick.css"
     />
+    // Add the new slick-theme.css if you want the default styling
     <link
       rel="stylesheet"
       type="text/css"
-      href="/node_modules/slick/slick-theme.css"
+      href="../node_modules/slick-carousel/slick/slick-theme.css"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,13 +41,12 @@
     <main class="home">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <!-- @@include("components/_hero.html") -->
-          </div>
+          <div class="col-12">@@include("components/_hero.html")</div>
         </div>
       </div>
     </main>
     @@include("icons/_icons.html") @@include("components/_footer.html")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -53,15 +54,7 @@
     ></script>
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="/node_modules/slick/slick.min.js"
+      src="../node_modules/slick-carousel/slick/index.js"
     ></script>
     <script src="./scripts/index.js"></script>
   </body>
