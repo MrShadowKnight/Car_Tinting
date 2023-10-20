@@ -1,7 +1,7 @@
 // import libraries
 @import "base/reset";
-@import '../../node_modules/slick-carousel/slick/slick.scss';
-@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
 // import base styles
 @import "base/func";
@@ -21,6 +21,6 @@
 @import "pages/page-about";
 
 body {
-    font-family: Ubuntu;
-    background-color: #28282A;
+  font-family: Ubuntu;
+  background-color: #28282a;
 }

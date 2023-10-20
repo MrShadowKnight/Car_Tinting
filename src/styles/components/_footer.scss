@@ -1,75 +1,76 @@
-.footer{
-    padding: 126px 0 0 0;
-    color: #fff;
-    &__logo{
-        & img{
-            width: 208px;
-            height: 26px;
-        }
-        & p{
-            font-size: 16px;
-            padding: 30px 0 0 0;
-            line-height: 30px;
-        }
+.footer {
+  padding: 126px 0 0 0;
+  color: #fff;
+  &__logo {
+    & img {
+      width: 208px;
+      height: 26px;
     }
-    &__nav{padding: 0 0 60px 0;
-        display: flex;
-        &_contact{
-            & ul{
-                & li{
-                    & h1{
-                        font-size: 22px;
-                        font-weight: 500;
-                        padding: 0 0 13px 0;
-                    }
-                    display: flex;
-                    & a{
-                        font-size: 18px;
-                        text-decoration: none;
-                        color: #fff;
-                        padding: 13px 0;
-                        &:hover{
-                            color: #F2C938;
-                        }
-                        & img{
-                            width: 26px;
-                            height: 26px;
-                        }
-                    }
-                }
+    & p {
+      font-size: 16px;
+      padding: 30px 0 0 0;
+      line-height: 30px;
+    }
+  }
+  &__nav {
+    padding: 0 0 60px 0;
+    display: flex;
+    &_contact {
+      & ul {
+        & li {
+          & h1 {
+            font-size: 22px;
+            font-weight: 500;
+            padding: 0 0 13px 0;
+          }
+          display: flex;
+          & a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            padding: 13px 0;
+            &:hover {
+              color: #f2c938;
             }
-        }
-        &_servis{
-            & ul{
-                & li{
-                    padding: 0 0 30px 0;
-                    & h1{
-                        font-size: 22px;
-                        font-weight: 500;
-                        padding: 0 !important;
-                    }
-                    & a{
-                        font-size: 18px;
-                        text-decoration: none;
-                        color: #fff;
-                        &:hover{
-                            color: #F2C938;
-                        }
-                    }
-                }
+            & img {
+              width: 26px;
+              height: 26px;
             }
+          }
         }
+      }
     }
-    &__copyright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 0;
-        font-family: Poppins !important;
-        font-size: 12px;
-        line-height: 20px;
-        color: #777E90;
-        background-color: #161617;
-        width: 100%;
+    &_servis {
+      & ul {
+        & li {
+          padding: 0 0 30px 0;
+          & h1 {
+            font-size: 22px;
+            font-weight: 500;
+            padding: 0 !important;
+          }
+          & a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              color: #f2c938;
+            }
+          }
+        }
+      }
     }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-family: Poppins !important;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+    background-color: #161617;
+    width: 100%;
+  }
 }
