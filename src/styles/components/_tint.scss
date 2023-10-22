@@ -1,7 +1,9 @@
 .tint {
-  display: flex;
-  height: 660px;
-  margin: 150px 0;
+  &__box {
+    display: flex;
+    height: 660px;
+    margin: 150px 0;
+  }
   &__content {
     h1 {
       color: #fff;
