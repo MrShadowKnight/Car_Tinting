@@ -35,7 +35,10 @@
       position: absolute;
       top: -80px;
       left: 1100px;
-      
+    }
+    .slick-next:before:hover,
+    .slick-prev:before:hover {
+      color: yellow !important;
     }
     .slick-next {
       position: absolute;
