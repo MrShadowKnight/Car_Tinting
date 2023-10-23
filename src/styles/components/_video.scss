@@ -1,6 +1,15 @@
 .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   video {
-    width: 100%;
+    width: 90%;
     height: 783px;
+    @media screen and (max-width: 1300px) {
+      height: 650px;
+    }
+    @media screen and (max-width: 1150px) {
+      height: 500px;
+    }
   }
 }

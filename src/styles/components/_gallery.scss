@@ -35,6 +35,12 @@
       position: absolute;
       top: -80px;
       left: 1100px;
+      @media screen and (max-width: 1400px) {
+        left: 900px;
+      }
+      @media screen and (max-width: 1200px) {
+        left: 750px;
+      }
     }
     .slick-next:before:hover,
     .slick-prev:before:hover {
@@ -44,6 +50,9 @@
       position: absolute;
       top: -80px;
       right: 20px;
+      @media screen and (max-width: 1400px) {
+        right: 0;
+      }
     }
   }
 }

@@ -13,4 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     infinite: true,
     slidesToShow: 4,
   });
+  jQuery(document).ready(function () {
+    jQuery(".burger__menu_btn").click(function () {
+      jQuery(".burger__menu").toggleClass("opened");
+    });
+  });
 });
