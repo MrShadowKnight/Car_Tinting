@@ -1,7 +1,6 @@
 .tint {
   &__box {
     display: flex;
-    height: 660px;
     margin: 150px 0;
     @media screen and (max-width: 992px) {
       flex-direction: column;
@@ -35,9 +34,13 @@
     &_price {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       background-color: #343436;
       border-radius: 15px;
       padding: 25px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 50px;
+      }
       svg {
         margin: 0 39px;
       }
@@ -100,14 +103,10 @@
   }
   &__image {
     height: 660px;
-    @media screen and (max-width: 1200px) {
-      height: 550px;
-    }
     @media screen and (max-width: 1100px) {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 450px;
     }
     position: relative;
     margin-left: 56px;
@@ -120,12 +119,12 @@
       border-top-left-radius: 440px;
       z-index: 0;
       @media screen and (max-width: 1200px) {
-        height: 550px;
-        width: 400px;
+        height: auto;
+        width: 100%;
       }
-      @media screen and (max-width: 1100px) {
-        height: 450px;
-        width: 350px;
+      @media screen and (max-width: 992px) {
+        height: 660px;
+        width: auto;
       }
     }
     &_svg-one {
