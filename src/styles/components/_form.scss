@@ -1,6 +1,7 @@
 .form {
   position: relative;
   padding: 125px 0;
+  height: auto;
   &__bg {
     position: absolute;
     top: 0;
@@ -8,10 +9,16 @@
     width: 48%;
     height: 100%;
     background: #343436;
+    @media screen and (max-width: 999px) {
+      display: none;
+    }
   }
   &__box {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 999px) {
+      flex-direction: column;
+    }
   }
   &__content {
     h1 {
@@ -49,7 +56,7 @@
         font-size: 14px;
         line-height: 24px;
         @media screen and (max-width: 1200px) {
-          width: 450px;
+          width: 100%;
         }
       }
       .btn {
@@ -64,7 +71,7 @@
         text-align: center;
         color: #fff;
         @media screen and (max-width: 1200px) {
-          width: 450px;
+          width: 100%;
         }
       }
     }
@@ -92,6 +99,12 @@
     &_social {
       width: auto;
       margin-right: 100px;
+      @media screen and (max-width: 770px) {
+        margin-right: 50px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-right: 0;
+      }
       a {
         text-decoration: none;
         svg {
@@ -108,7 +121,17 @@
     }
   }
   &__map {
+    height: 755px;
     position: relative;
+    @media screen and (max-width: 1200px) {
+      height: auto;
+    }
+    @media screen and (max-width: 999px) {
+      height: 755px;
+    }
+    @media screen and (max-width: 770px) {
+      height: 560px;
+    }
     img {
       position: absolute;
       top: 0;
@@ -118,7 +141,7 @@
       flex-shrink: 0;
       object-fit: cover;
       @media screen and (max-width: 1200px) {
-        height: 650px;
+        height: auto;
       }
     }
   }

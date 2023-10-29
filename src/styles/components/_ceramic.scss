@@ -63,6 +63,9 @@
     @media screen and (max-width: 992px) {
       flex-direction: row;
     }
+    @media screen and (max-width: 570px) {
+      flex-direction: column;
+    }
     &_item {
       background: #343436;
       border-radius: 15px;

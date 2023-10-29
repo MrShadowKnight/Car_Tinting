@@ -134,7 +134,7 @@
       object-fit: cover;
       border-top-left-radius: 440px;
       z-index: 0;
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1400px) {
         height: auto;
         width: 100%;
       }
@@ -163,7 +163,7 @@
       bottom: 0;
       right: -65px;
       z-index: 1;
-      @media screen and (max-width: 1290px) {
+      @media screen and (max-width: 1440px) {
         display: none;
       }
     }
