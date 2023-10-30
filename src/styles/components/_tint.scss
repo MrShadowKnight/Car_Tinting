@@ -145,8 +145,9 @@
       @media screen and (max-width: 715px) {
         height: 580px;
       }
-      @media screen and (max-width: 540px) {
-        height: 500px;
+      @media screen and (max-width: 572px) {
+        height: auto;
+        width: 100%;
       }
     }
     &_svg-one {
