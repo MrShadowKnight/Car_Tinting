@@ -5,8 +5,33 @@ const clearForm = (name, phone, email, message) => {
   message.value = "";
 };
 
-// start point
+// Start point
 document.addEventListener("DOMContentLoaded", () => {
+  // Use the correct syntax for selecting elements by class name
+  const FORM = document.querySelector(".form__content_form");
+  const NAME = document.querySelector(".form__content_form_name");
+  const PHONE = document.querySelector(".form__content_form_phone");
+  const EMAIL = document.querySelector(".form__content_form_email");
+  const MESSAGE = document.querySelector(".form__content_form_message");
+
+  // Console.log statements should be inside the event listener to access the values correctly
+  // Add the 'submit' event listener to the form
+  FORM.addEventListener("submit", (e) => {
+    // Prevent the form from actually submitting
+    e.preventDefault();
+
+    let frame = {
+      name: NAME.value,
+      phone: PHONE.value,
+      email: EMAIL.value,
+      message: MESSAGE.value,
+    };
+    console.log(frame);
+
+    // Call the clearForm function to reset the form fields
+    clearForm(NAME, PHONE, EMAIL, MESSAGE);
+  });
+
   $(".hero__slider").slick({
     dots: true,
     arrows: false,
@@ -40,48 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     ],
   });
+
   jQuery(document).ready(function () {
     jQuery(".burger__menu_btn").click(function () {
       jQuery(".burger__menu").toggleClass("opened");
     });
   });
-
-  // // Get element from do cument
-  // const FORM = document.getElementById(".form__content_form");
-  // const NAME = document.getElementById(".form__content_form_name");
-  // const PHONE = document.getElementById(".form__content_form_phone");
-  // const EMAIL = document.getElementById(".form__content_form_email");
-  // const MESSAGE = document.getElementById(".form__content_form_message");
-
-  // // console
-  // console.log(NAME.value);
-  // console.log(PHONE.value);
-  // console.log(EMAIL.value);
-  // console.log(MESSAGE.value);
-
-  // // add listemers
-  // FORM.addEventListener("submit", (e) => {
-  //   let frame = {
-  //     name: NAME.value,
-  //     phone: PHONE.value,
-  //     email: EMAIL.value,
-  //     message: MESSAGE.value,
-  //   };
-  //   console.log(frame);
-  //   clearForm(NAME, PHONE, EMAIL, MESSAGE);
-  // });
-  function submitForm() {
-    var name = document.getElementById(".form__content_form_name").value;
-    var phone = document.getElementById("age").value;
-    var email = document.getElementById("email").value;
-    var occupation = document.getElementById("occupation").value;
-
-    var result = "Ім'я: " + name + "<br>";
-    result += "Вік: " + phone + "<br>";
-    result += "Email: " + email + "<br>";
-    result += "Заняття: " + occupation + "<br>";
-
-    document.getElementById("result").innerHTML = result;
-}
-
 });
